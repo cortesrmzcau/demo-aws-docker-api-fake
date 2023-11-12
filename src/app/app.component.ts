@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ServiceService } from './service.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'demo-aws-docker';
+  resultados: any[] = [];
+
+  constructor(private servicio: ServiceService) {}
+
+  ngOnInit(): void {
+    this.servicio.getResultados().subscribe(data => {
+      this.resultados = data;
+    });
+  }
 }
