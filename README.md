@@ -8,11 +8,11 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 ## Getting started
 
-1.- git clone https://github.com/cortesrmzcau/demo-docker-api-fake
-2.- npm install
-3.- ng s -o
+1. git clone https://github.com/cortesrmzcau/demo-docker-api-fake
+2. npm install
+3. ng s -o
 
 ## Getting started with Docker
 
-1.- docker build -t angular-docker-api .
-2.- docker run -p 80:80 angular-docker-api
+1. docker build -t angular-docker-api .
+2. docker run -p 80:80 angular-docker-api
